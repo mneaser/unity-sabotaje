@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleMovement : MonoBehaviour
+public class PersonajePrincipal : MonoBehaviour
 {
     public float speed = 5f; // Velocidad de movimiento del objeto
 
