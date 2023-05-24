@@ -14,6 +14,9 @@ public class ConveyorBelt : MonoBehaviour
         {
             // Mueve el objeto hacia adelante en la dirección de la cinta transportadora
             movableObject.MoveForward(speed * Time.deltaTime);
+
+            // Mueve la cinta transportadora en el eje X
+            transform.Translate(Vector3.right * speed * Time.deltaTime);
         }
     }
 }

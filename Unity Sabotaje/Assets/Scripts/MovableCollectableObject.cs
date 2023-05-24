@@ -22,7 +22,10 @@ public class MovableCollectableObject : MonoBehaviour
 
     public void MoveForward(float speed)
     {
-        // Mueve el objeto hacia adelante en la dirección de la cinta transportadora si no está siendo transportado por el personaje
+       {
+        // Mueve el objeto hacia adelante en la dirección y velocidad especificadas
+        transform.Translate(Vector3.forward * speed);
+    }  // Mueve el objeto hacia adelante en la dirección de la cinta transportadora si no está siendo transportado por el personaje
         if (!isBeingCarried)
         {
             rb.MovePosition(transform.position + conveyorBeltDirection * speed);
